@@ -1,0 +1,33 @@
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.cartsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart, .store, .home, .title {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cartsym {
+    width: 25px;
+    background-color: white;
+}
