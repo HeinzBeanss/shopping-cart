@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Homepage = () => {
+const Homepage = (props) => {
+
 
   return (
       <div> This is the homepage. </div>

@@ -1,0 +1,9 @@
+.cartsection {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: red 1px solid;
+    background-color: #e7e7e7;
+}
