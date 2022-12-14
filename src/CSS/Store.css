@@ -1,6 +1,209 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .store {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.titlebanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    color: rgb(238, 238, 238);
+    background-color: rgb(30, 36, 33);
+    font-weight: 1000;
+    font-size: 2.8rem;
+    letter-spacing: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 24px 0px;
+}
+
+.imagebanner {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    /* background-color: rgb(26, 26, 26); */
+    border-top: 5px rgb(30, 36, 33) solid;
+    border-bottom: 5px rgb(30, 36, 33) solid;
+    background-image: url("../assets/yu-gi-oh\ banner\ v1.png");
+    background-size: cover;
+    background-position: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 20px;
+}
+
+.imagecover {
+    position: absolute;
+    color: white;
+    width: 100%;
+}
+
+.imagecovershadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    height: 320px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgb(30, 36, 33, 0.8);
+}
+
+.imagecovertitle {
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.imagecoverpara {
+    font-size: 1.2rem;
+    width: 40%;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.32) 0px 3px 8px;
+}
+
+.textbanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(238, 238, 238);
+    background-color: rgb(30, 36, 33);
+    font-weight: 400;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 24px;
+    height: 280px;
+
+}
+
+.itemgrid {
+    width: 70%;
+}
+.actualitemgrid {
+    display: grid;
+    /* For just a 4 colum grid: 
+    width: fit-content;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    */
+     
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 6fr));
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* ^ this is the setting that helps with hovering images */
+    padding: 10px;
+    border-radius: 0.6rem;
+    background-color: rgb(230, 230, 230);
+    /* background-color: rgb(30, 36, 33); */
+    /* box-shadow: rgba(30, 36, 33, 0.24) 0px 3px 8px; */
+}
+.cardimage {
+    /* min-width: 100px; */
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardtitle {
+    display: flex;
+    align-items: center;
+    color: rgb(39, 48, 43);
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    min-height: 2.6rem;
+    max-height: fit-content;
+}
+
+.cardinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+
+}
+
+.bottomcardinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+    justify-content: space-between;
+}
+
+.changevalue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+
+}
+
+.itemprice {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(39, 48, 43);
+    margin: 0;
+    padding: 5px;
+}
+
+input {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 40px;
+    /* border: 2px solid rgb(39, 48, 43); */
+    border: none;
+    border-radius: 0.4rem;
+    padding: 5px;
+    /* color: white; */
+    background-color: rgb(255, 255, 255);
+}
+
+.increase, .decrease {
+    font-size: 1.5rem;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 0.4rem;
+}
+
+.increase:hover, .decrease:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.addtocart {
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(40, 48, 44);
+}
+
+.addtocart:hover {
+    background-color: rgb(60, 71, 66);
+    cursor: pointer;
 }

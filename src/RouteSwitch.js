@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import Homepage from "../src/Components/Homepage";
 import Store from "../src/Components/Store";
 import Cart from "../src/Components/Cart";
+
 import { airneos, airneoscover, avian, aviancover, bewd, bewdcover, bladedge, bladedgecover, bubbleman, bubblemancover, burst, burstcover, clayman, claymancover, cyberblader, cyberbladercover, cyberdragon, cyberdragoncover, cyberdragoninfinity, cyberdragoninfinitycover, cyberenddragon, cyberenddragoncover, darkhole, darkholecover, darkmagician, darkmagiciancover, flamewingman, flamewingmancover, futurefusion, futurefusioncover, gaia, gaiacover, gracefulcharity, gracefulcharitycover, hpfd, hpfdcover, infiniteimpermanence, infiniteimpermanencecover, mirrorforce, mirrorforcecover, monsterreborn, monsterreborncover, mst, mstcover, obelisk, obeliskcover, philstone, philstonecover, poly, polycover, potofgreed, potofgreedcover, powerbond, powerbondcover, ra, racover, rainbowdragon, rainbowdragoncover, sealof, sealofcover, shining, shiningcover, slifer, slifercover, sparkman, sparkmancover, steamroid, steamroidcover, stratos, stratoscover, superpoly, superpolycover, swords, swordscover, tradein, tradeincover, transcendentwings, transcendentwingscover, tribute, tributecover, wildheart, wildheartcover, wingedkuriboh, wingedkuribohcover, yubel, yubelcover }  from "./images";
 
 
@@ -25,7 +26,7 @@ const RouteSwitch = () => {
         [
             {
                 name: "Elemental Hero Air Neos",
-                price: 40,
+                price: "40",
                 quantity: 0,
                 fakequantity: 0,
                 image: airneos,
@@ -34,7 +35,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Avian",
-                price: 0.20,
+                price: "0.20",
                 quantity: 0,
                 fakequantity: 0,
                 image: avian,
@@ -43,7 +44,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Blue Eyes White Dragon",
-                price: 0.80,
+                price: "0.80",
                 quantity: 0,
                 fakequantity: 0,
                 image: bewd,
@@ -52,7 +53,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Bladege",
-                price: 0.90,
+                price: "0.90",
                 quantity: 0,
                 fakequantity: 0,
                 image: bladedge,
@@ -61,7 +62,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Bubbleman",
-                price: 0.40,
+                price: "0.40",
                 quantity: 0,
                 fakequantity: 0,
                 image: bubbleman,
@@ -70,7 +71,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Burstinatrix",
-                price: 0.30,
+                price: "0.30",
                 quantity: 0,
                 fakequantity: 0,
                 image: burst,
@@ -79,7 +80,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Clayman",
-                price: 0.40,
+                price: "0.40",
                 quantity: 0,
                 fakequantity: 0,
                 image: clayman,
@@ -88,7 +89,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Cyber Blader",
-                price: 1.4,
+                price: "1.40",
                 quantity: 0,
                 fakequantity: 0,
                 image: cyberblader,
@@ -97,7 +98,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Cyber Dragon",
-                price: 2,
+                price: "2.00",
                 quantity: 0,
                 fakequantity: 0,
                 image: cyberdragon,
@@ -106,7 +107,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Cyber Dragon Infinity",
-                price: 4,
+                price: "4.00",
                 quantity: 0,
                 fakequantity: 0,
                 image: cyberdragoninfinity,
@@ -115,7 +116,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Cyber End Dragon",
-                price: 8,
+                price: "8.00",
                 quantity: 0,
                 fakequantity: 0,
                 image: cyberenddragon,
@@ -124,7 +125,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Dark Hole",
-                price: 2.20,
+                price: "2.20",
                 quantity: 0,
                 fakequantity: 0,
                 image: darkhole,
@@ -133,7 +134,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Dark Magician",
-                price: 0.60,
+                price: "0.60",
                 quantity: 0,
                 fakequantity: 0,
                 image: darkmagician,
@@ -142,7 +143,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Flame Wingman",
-                price: 3.4,
+                price: "3.40",
                 quantity: 0,
                 fakequantity: 0,
                 image: flamewingman,
@@ -151,7 +152,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Future Fusion",
-                price: 0.8,
+                price: "0.80",
                 quantity: 0,
                 fakequantity: 0,
                 image: futurefusion,
@@ -160,7 +161,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Gaia the Fierce Knight",
-                price: 0.10,
+                price: "0.10",
                 quantity: 0,
                 fakequantity: 0,
                 image: gaia,
@@ -169,7 +170,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Graceful Charity",
-                price: 1.6,
+                price: "1.60",
                 quantity: 0,
                 fakequantity: 0,
                 image: gracefulcharity,
@@ -178,7 +179,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Harpie's Feather Duster",
-                price: 5.6,
+                price: "5.60",
                 quantity: 0,
                 fakequantity: 0,
                 image: hpfd,
@@ -187,7 +188,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Infinite Impermanence",
-                price: 26,
+                price: "26",
                 quantity: 0,
                 fakequantity: 0,
                 image: infiniteimpermanence,
@@ -196,7 +197,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Mirror Force",
-                price: 2.4,
+                price: "2.40",
                 quantity: 0,
                 fakequantity: 0,
                 image: mirrorforce,
@@ -205,7 +206,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Monster Reborn",
-                price: 1.9,
+                price: "1.90",
                 quantity: 0,
                 fakequantity: 0,
                 image: monsterreborn,
@@ -214,7 +215,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Mystical Space Typhoon",
-                price: 0.7,
+                price: "0.70",
                 quantity: 0,
                 fakequantity: 0,
                 image: mst,
@@ -223,7 +224,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Obelisk the Tormentor",
-                price: 4.2,
+                price: "4.20",
                 quantity: 0,
                 fakequantity: 0,
                 image: obelisk,
@@ -232,7 +233,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Sabatiel - The Philosopher's Stone",
-                price: 7.2,
+                price: "7.20",
                 quantity: 0,
                 fakequantity: 0,
                 image: philstone,
@@ -241,7 +242,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Polymerization",
-                price: 0.6,
+                price: "0.60",
                 quantity: 0,
                 fakequantity: 0,
                 image: poly,
@@ -250,7 +251,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Pot of Greed",
-                price: 3.10,
+                price: "3.10",
                 quantity: 0,
                 fakequantity: 0,
                 image: potofgreed,
@@ -259,7 +260,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Power Bond",
-                price: 2.4,
+                price: "2.40",
                 quantity: 0,
                 fakequantity: 0,
                 image: powerbond,
@@ -268,7 +269,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "The Winged Dragon of Ra",
-                price: 7.6,
+                price: "7.60",
                 quantity: 0,
                 fakequantity: 0,
                 image: ra,
@@ -277,7 +278,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Rainbow Dragon",
-                price: 5.1,
+                price: "5.10",
                 quantity: 0,
                 fakequantity: 0,
                 image: rainbowdragon,
@@ -286,7 +287,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "The Seal of Orichalcos",
-                price: 2,
+                price: "2.00",
                 quantity: 0,
                 fakequantity: 0,
                 image: sealof,
@@ -295,7 +296,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Shining Flare Wingman",
-                price: 5.8,
+                price: "5.80",
                 quantity: 0,
                 fakequantity: 0,
                 image: shining,
@@ -304,7 +305,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Slifer the Sky Dragon",
-                price: 3.10,
+                price: "3.10",
                 quantity: 0,
                 fakequantity: 0,
                 image: slifer,
@@ -313,7 +314,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Sparkman",
-                price: 0.40,
+                price: "0.40",
                 quantity: 0,
                 fakequantity: 0,
                 image: sparkman,
@@ -322,7 +323,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Stratos",
-                price: 4.90,
+                price: "4.90",
                 quantity: 0,
                 fakequantity: 0,
                 image: stratos,
@@ -331,7 +332,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Steamroid",
-                price: 1.60,
+                price: "1.60",
                 quantity: 0,
                 fakequantity: 0,
                 image: steamroid,
@@ -340,7 +341,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Super Polymerization",
-                price: 2.8,
+                price: "2.80",
                 quantity: 0,
                 fakequantity: 0,
                 image: superpoly,
@@ -349,7 +350,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Swords of Revealing Light",
-                price: 0.50,
+                price: "0.50",
                 quantity: 0,
                 fakequantity: 0,
                 image: swords,
@@ -358,7 +359,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Trade-In",
-                price: 0.80,
+                price: "0.80",
                 quantity: 0,
                 fakequantity: 0,
                 image: tradein,
@@ -367,7 +368,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Transcendent Wings",
-                price: 0.60,
+                price: "0.60",
                 quantity: 0,
                 fakequantity: 0,
                 image: transcendentwings,
@@ -376,7 +377,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Torrential Tribute",
-                price: 1.3,
+                price: "1.30",
                 quantity: 0,
                 fakequantity: 0,
                 image: tribute,
@@ -385,7 +386,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Elemental Hero Wildheart",
-                price: 0.50,
+                price: "0.50",
                 quantity: 0,
                 fakequantity: 0,
                 image: wildheart,
@@ -394,7 +395,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Winged Kuriboh",
-                price: 0.90,
+                price: "0.90",
                 quantity: 0,
                 fakequantity: 0,
                 image: wingedkuriboh,
@@ -403,7 +404,7 @@ const RouteSwitch = () => {
             },
             {
                 name: "Yubel",
-                price: 3.30,
+                price: "3.30",
                 quantity: 0,
                 fakequantity: 0,
                 image: yubel,
@@ -550,6 +551,7 @@ const RouteSwitch = () => {
                     <Route path={"/store"} element={<Store shoppingItems={shoppingItems} fakeIncrease={fakeIncrease} fakeDecrease={fakeDecrease} fakeHandleChange={fakeHandleChange} update={addFakeQuantityToRealQuantity} />} />
                     <Route path={"/cart"} element={<Cart cartShown={cartShown} setCartShown={ () => { setCartShown(false)} } shoppingItems={shoppingItems} increase={increase} decrease={decrease} handleChange={handleChange} price={price} /> }/>
                 </Routes>
+                
             </BrowserRouter>
             )
     } else {
@@ -561,6 +563,7 @@ const RouteSwitch = () => {
                     <Route path={"/store"} element={<Store shoppingItems={shoppingItems} fakeIncrease={fakeIncrease} fakeDecrease={fakeDecrease} fakeHandleChange={fakeHandleChange} update={addFakeQuantityToRealQuantity}/>} />
                     <Route path={"/cart"} element={<Cart cartShown={cartShown} setCartShown={ () => { setCartShown(false)} } shoppingItems={shoppingItems} increase={increase} decrease={decrease} handleChange={handleChange} price={price}/> }/>
                 </Routes>
+                
             </BrowserRouter>
             )
     }

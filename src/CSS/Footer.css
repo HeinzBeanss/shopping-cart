@@ -1,0 +1,17 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(30, 36, 33);
+    padding: 20px 50px;
+    color: rgb(226, 226, 226);
+    box-sizing: border-box;
+    border-top: solid rgb(231, 231, 231) 2px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.24);
+}
+
+.github {
+    color: rgb(223, 223, 223);
+}

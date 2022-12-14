@@ -5,15 +5,6 @@ import "./CSS/Nav.css";
 
 const Nav  = (props) => {
   
-
-  useEffect(() => {
-
-
-    return () => {
-
-    }
-  })
-
     return (
         <div className="navigation"> 
             <div className="bannerpromo">GET AN EXTRA 10% OFF USING CODE <b onClick={ (e) => { navigator.clipboard.writeText(e.target.textContent)}}><u>YUGIOH22</u></b> AT CHECKOUT</div>
