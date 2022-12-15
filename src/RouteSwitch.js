@@ -420,6 +420,7 @@ const RouteSwitch = () => {
             if (item.quantity > 0) {
                 tempprice = item.quantity * item.price;
                 temptotal = tempprice + temptotal;
+                
                 return temptotal;
             }            
         })
@@ -504,6 +505,7 @@ const RouteSwitch = () => {
     }
 
     const increase = (item, i) => {
+        console.log("guren mark 3, launch!")
         setShoppingItems([...shoppingItems].map(object => {
             if (object.name === item.name) {
                 return {
@@ -541,23 +543,15 @@ const RouteSwitch = () => {
         setCartCount(+tempquantitytotal);
     }, [shoppingItems])
 
-    if (cartShown) {
-
         return (
             <BrowserRouter>
-                <Nav cartCount={cartCount} cartShown={cartShown} setCartShown={ () => { setCartShown(true)} } />
-                <Routes>
-                    <Route path={"/"} element={<Homepage />} />
-                    <Route path={"/store"} element={<Store shoppingItems={shoppingItems} fakeIncrease={fakeIncrease} fakeDecrease={fakeDecrease} fakeHandleChange={fakeHandleChange} update={addFakeQuantityToRealQuantity} />} />
-                    <Route path={"/cart"} element={<Cart cartShown={cartShown} setCartShown={ () => { setCartShown(false)} } shoppingItems={shoppingItems} increase={increase} decrease={decrease} handleChange={handleChange} price={price} /> }/>
-                </Routes>
+                <Nav cartCount={cartCount} 
+                cartShown={cartShown} 
+                setCartShown={ () => { setCartShown(false)} } 
+                shoppingItems={shoppingItems} increase={increase} 
+                decrease={decrease} handleChange={handleChange} 
+                price={price}/>
                 
-            </BrowserRouter>
-            )
-    } else {
-        return (
-            <BrowserRouter>
-                <Nav cartCount={cartCount} />
                 <Routes>
                     <Route path={"/"} element={<Homepage />} />
                     <Route path={"/store"} element={<Store shoppingItems={shoppingItems} fakeIncrease={fakeIncrease} fakeDecrease={fakeDecrease} fakeHandleChange={fakeHandleChange} update={addFakeQuantityToRealQuantity}/>} />
@@ -567,8 +561,5 @@ const RouteSwitch = () => {
             </BrowserRouter>
             )
     }
-    
-
-}
 
 export default RouteSwitch;

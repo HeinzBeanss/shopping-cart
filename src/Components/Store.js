@@ -37,6 +37,7 @@ const Store = (props) => {
                                 <h6 className="cardtitle">{item.name}</h6>
                                
                                <div className="bottomcardinfo">
+                                <p className="rarity">{item.rarity}</p>
                                 <p className="itemprice">${item.price}</p>
                                 <div className="changevalue">
                                     <button className="increase" onClick={ () => {props.fakeIncrease(item, i)}}>+</button>
