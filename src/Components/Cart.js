@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "../CSS/Cart.css";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ const Cart = (props) => {
                                         <div className="quantity">
                                             <button className="cartincrease" onClick={ () => {props.increase(item, i)}}>+</button>
                                             <input className="cartinput" type="number" onChange={ (e) => { props.handleChange(item, i, e)}} value={item.quantity}></input>
-                                            <button className="cartdecrease" onClick={ () => {props.decrease(item, i)}}>-</button>
+                                            <button role="contentinfo" className="cartdecrease" onClick={ () => {props.decrease(item, i)}}>-</button>
                                         </div>
                                     </div>
                                     <div className="cartprice">
