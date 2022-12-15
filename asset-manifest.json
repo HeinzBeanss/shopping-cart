@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.d73b60ae.css",
-    "main.js": "/shopping-cart/static/js/main.2da1a667.js",
+    "main.js": "/shopping-cart/static/js/main.8423446c.js",
     "static/media/yu-gi-oh homepage V3 bot.png": "/shopping-cart/static/media/yu-gi-oh homepage V3 bot.d3103a0ad21e9d8e765a.png",
     "static/media/yu-gi-oh homepage V3 top.png": "/shopping-cart/static/media/yu-gi-oh homepage V3 top.724c35f67b0600b71583.png",
     "static/media/yu-gi-oh banner v1.png": "/shopping-cart/static/media/yu-gi-oh banner v1.0b50bf5d41627e7f569d.png",
@@ -93,10 +93,10 @@
     "static/media/swordscrop.jpg": "/shopping-cart/static/media/swordscrop.160239760677daecd5c7.jpg",
     "index.html": "/shopping-cart/index.html",
     "main.d73b60ae.css.map": "/shopping-cart/static/css/main.d73b60ae.css.map",
-    "main.2da1a667.js.map": "/shopping-cart/static/js/main.2da1a667.js.map"
+    "main.8423446c.js.map": "/shopping-cart/static/js/main.8423446c.js.map"
   },
   "entrypoints": [
     "static/css/main.d73b60ae.css",
-    "static/js/main.2da1a667.js"
+    "static/js/main.8423446c.js"
   ]
 }
