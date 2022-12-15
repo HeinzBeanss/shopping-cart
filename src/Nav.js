@@ -9,27 +9,22 @@ const Nav  = (props) => {
 
 
     const addCart = () => {
-        console.log("UNDER THIS");
-        console.log(props.cartShown);
         if (props.cartShown === true) {
         setTest(<Cart test={test} removeCart={removeCart} cartShown={props.cartShown} setCartShown={ () => { props.setCartShown(false)} } shoppingItems={props.shoppingItems} increase={props.increase} decrease={props.decrease} handleChange={props.handleChange} price={props.price}/>)
     } else {
-        console.log("nope, dont show cart, it's false")
+
     }
 }
 
     useEffect(() => {
-        console.log("lancelot albion");
         addCart()
 
     },[...props.shoppingItems, props.cartShown, props.price]) //, props.cartShown
     // 
 
     const removeCart = () => {
-        console.log("lancelot launch!");
         props.dontShowCart();
         setTest([]);
-        console.log(props.test)
     }
 
   

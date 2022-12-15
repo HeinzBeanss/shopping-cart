@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "../CSS/Homepage.css"
-const Homepage = (props) => {
-
+const Homepage = () => {
 
   return (
     <div>

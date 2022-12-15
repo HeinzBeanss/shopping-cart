@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 
 const Cart = (props) => {
 
-
-    console.log(props);
-
     return (
         <div className="cartsection"> 
             <div className="carttitlesection">

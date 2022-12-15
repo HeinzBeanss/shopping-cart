@@ -14,13 +14,6 @@ const RouteSwitch = () => {
     let [cartShown, setCartShown] = useState(false);
     let [price, setPrice] = useState(0);
 
-    // useEffect(() => {
-    //     console.log(cartShown);
-    //     console.log("returned");
-    //     setCartShown(true);
-        
-    // }, [cartShown])
-
     // shopping items
     const [shoppingItems, setShoppingItems] = useState(
         [
@@ -424,7 +417,7 @@ const RouteSwitch = () => {
                 return temptotal;
             }            
         })
-        // console.log(`this is temptotal: ${temptotal}`)
+
         setPrice(temptotal);
     }, [shoppingItems]);
 
@@ -452,7 +445,6 @@ const RouteSwitch = () => {
             }
             else return object;
         }))
-        console.log(shoppingItems);
     };
     
 
@@ -473,7 +465,6 @@ const RouteSwitch = () => {
             }
             else return object;
         }))
-        console.log(shoppingItems);
     }
 
     /// END OF FAKES
@@ -505,7 +496,6 @@ const RouteSwitch = () => {
     }
 
     const increase = (item, i) => {
-        console.log("guren mark 3, launch!")
         setShoppingItems([...shoppingItems].map(object => {
             if (object.name === item.name) {
                 return {
@@ -515,7 +505,6 @@ const RouteSwitch = () => {
             }
             else return object;
         }))
-        console.log(shoppingItems);
     };
     
 
@@ -531,7 +520,6 @@ const RouteSwitch = () => {
             }
             else return object;
         }))
-        console.log(shoppingItems);
     }
 
     // SET CART FOR NAVBAR / CART X BUTTON vvv
@@ -564,7 +552,7 @@ const RouteSwitch = () => {
                 price={price}/>
                 
                 <Routes>
-                    <Route path={"/"} element={<Homepage />} />
+                    <Route path={""} element={<Homepage />} />
                     <Route path={"/store"} element={<Store shoppingItems={shoppingItems} fakeIncrease={fakeIncrease} fakeDecrease={fakeDecrease} fakeHandleChange={fakeHandleChange} update={addFakeQuantityToRealQuantity}/>} />
                     {/* <Route path={"/cart"} element={<Cart cartShown={cartShown} setCartShown={ () => { setCartShown(false)} } shoppingItems={shoppingItems} increase={increase} decrease={decrease} handleChange={handleChange} price={price}/> }/> */}
                 </Routes>
