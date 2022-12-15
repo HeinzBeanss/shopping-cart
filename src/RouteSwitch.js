@@ -543,7 +543,7 @@ const RouteSwitch = () => {
     }, [shoppingItems])
 
         return (
-            <BrowserRouter>
+            <BrowserRouter basename="/shopping-cart">
                 <Nav cartCount={cartCount} 
                 cartShown={cartShown} 
                 pleaseShowCart={pleaseShowCart}
