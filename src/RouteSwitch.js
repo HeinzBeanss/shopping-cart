@@ -543,7 +543,7 @@ const RouteSwitch = () => {
     }, [shoppingItems])
 
         return (
-            <BrowserRouter basename="/shopping-cart">
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Nav cartCount={cartCount} 
                 cartShown={cartShown} 
                 pleaseShowCart={pleaseShowCart}
