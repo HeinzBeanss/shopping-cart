@@ -553,7 +553,7 @@ const RouteSwitch = () => {
                 price={price}/>
                 
                 <Routes>
-                    <Route path={"/shopping-cart"} element={<Homepage />} />
+                    <Route path={"/"} element={<Homepage />} />
                     <Route path={"/store"} element={<Store shoppingItems={shoppingItems} fakeIncrease={fakeIncrease} fakeDecrease={fakeDecrease} fakeHandleChange={fakeHandleChange} update={addFakeQuantityToRealQuantity}/>} />
                     {/* <Route path={"/cart"} element={<Cart cartShown={cartShown} setCartShown={ () => { setCartShown(false)} } shoppingItems={shoppingItems} increase={increase} decrease={decrease} handleChange={handleChange} price={price}/> }/> */}
                 </Routes>
