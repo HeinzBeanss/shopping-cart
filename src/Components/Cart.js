@@ -32,7 +32,11 @@ const Cart = (props) => {
                                             <button className="cartdecrease" onClick={ () => {props.decrease(item, i)}}>-</button>
                                         </div>
                                     </div>
-                                    <div className="cartprice">${(Math.round(item.price * item.quantity * 100) / 100).toFixed(2)}</div>
+                                    <div className="cartprice">
+                                        <div className="singlecardprice"><i>${item.price} * {item.quantity}</i></div>
+                                        <div>${(Math.round(item.price * item.quantity * 100) / 100).toFixed(2)}</div>
+
+                                        </div>
                                 </div>
                             </div>
                         )

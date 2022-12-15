@@ -7,28 +7,31 @@ import Cart from "../src/Components/Cart";
 const Nav  = (props) => {
     const [test, setTest] = useState([]);
 
-    // useEffect(() => {
-    //     console.log("lancelot albion");
-    //     addCart()
 
-    // },[...props.shoppingItems.map(item => item.quantity)])
-    // // 
+    const addCart = () => {
+        console.log("UNDER THIS");
+        console.log(props.cartShown);
+        if (props.cartShown === true) {
+        setTest(<Cart test={test} removeCart={removeCart} cartShown={props.cartShown} setCartShown={ () => { props.setCartShown(false)} } shoppingItems={props.shoppingItems} increase={props.increase} decrease={props.decrease} handleChange={props.handleChange} price={props.price}/>)
+    } else {
+        console.log("nope, dont show cart, it's false")
+    }
+}
 
-    // const removeCart = () => {
-    //     console.log("lancelot launch!");
+    useEffect(() => {
+        console.log("lancelot albion");
+        addCart()
 
-    //     setTest([]);
-    //     console.log(props.test)
-    // }
+    },[...props.shoppingItems, props.cartShown, props.price]) //, props.cartShown
+    // 
 
-    // const addCart = () => {
-        
-    //         if (props.cartShown === true) {
-    //         setTest(<Cart test={test} removeCart={removeCart} cartShown={props.cartShown} setCartShown={ () => { props.setCartShown(false)} } shoppingItems={props.shoppingItems} increase={props.increase} decrease={props.decrease} handleChange={props.handleChange} price={props.price}/>)
-    //     } else {
-    //         console.log("nope, dont show cart, it's false")
-    //     }
-    // }
+    const removeCart = () => {
+        console.log("lancelot launch!");
+        props.dontShowCart();
+        setTest([]);
+        console.log(props.test)
+    }
+
   
     return (
         <div>
@@ -40,10 +43,9 @@ const Nav  = (props) => {
                 <div className="navbarright">
                     <Link to={"/"}><div className="homebutton"> Home </div></Link>
                     <Link to={"/store"}><div className="storebutton"> Store </div></Link>
-                    <div className="cartbutton" onClick={props.setCartShown}>
+                    <div className="cartbutton">
                         {/* <img className="cartsym cart" src={CartIcon} alt="cart icon"/> for cart icon */}
-                        <Link to={"/cart"}><div className="cartsym cart" >Cart</div></Link>
-                        {/*onClick={addCart} */}
+                        <div className="cartsym cart" onClick={props.pleaseShowCart}>Cart</div>
                         <div className="cart">({props.cartCount})</div>
                         
                     </div>

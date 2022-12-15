@@ -7,7 +7,7 @@
     max-width: 450px;
     width: 50%;
     /* min-width: 50%; */
-    height: 100vh;
+    height: calc(100vh - 130px);
     top: 0;
     right: 0;
     /* border: red 1px solid; */
@@ -16,6 +16,7 @@
     overflow-x: scroll;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-left: solid 4px rgb(30, 36, 33);
+    /* box-sizing: border-box; */
 }
 
 .itemSummary {
@@ -95,12 +96,18 @@
     border-radius: 0.2rem;
 }
 
+.singlecardprice {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
 .cartprice {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .cartinput {

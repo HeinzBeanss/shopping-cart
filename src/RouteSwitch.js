@@ -14,12 +14,12 @@ const RouteSwitch = () => {
     let [cartShown, setCartShown] = useState(false);
     let [price, setPrice] = useState(0);
 
-    useEffect(() => {
-        console.log(cartShown);
-        console.log("returned");
-        setCartShown(true);
+    // useEffect(() => {
+    //     console.log(cartShown);
+    //     console.log("returned");
+    //     setCartShown(true);
         
-    }, [cartShown])
+    // }, [cartShown])
 
     // shopping items
     const [shoppingItems, setShoppingItems] = useState(
@@ -534,11 +534,21 @@ const RouteSwitch = () => {
         console.log(shoppingItems);
     }
 
+    // SET CART FOR NAVBAR / CART X BUTTON vvv
+
+    const pleaseShowCart = () => {
+        setCartShown(true);
+    }
+
+    const dontShowCart = () => {
+        setCartShown(false)
+    }
+
     let [cartCount, setCartCount] = useState(0);
     useEffect(() => {
         let tempquantitytotal = 0;
         shoppingItems.map((item, i) => {
-            tempquantitytotal = +tempquantitytotal + +item.quantity
+            return tempquantitytotal = +tempquantitytotal + +item.quantity
         })
         setCartCount(+tempquantitytotal);
     }, [shoppingItems])
@@ -547,7 +557,8 @@ const RouteSwitch = () => {
             <BrowserRouter>
                 <Nav cartCount={cartCount} 
                 cartShown={cartShown} 
-                setCartShown={ () => { setCartShown(false)} } 
+                pleaseShowCart={pleaseShowCart}
+                dontShowCart={dontShowCart} 
                 shoppingItems={shoppingItems} increase={increase} 
                 decrease={decrease} handleChange={handleChange} 
                 price={price}/>
@@ -555,7 +566,7 @@ const RouteSwitch = () => {
                 <Routes>
                     <Route path={"/"} element={<Homepage />} />
                     <Route path={"/store"} element={<Store shoppingItems={shoppingItems} fakeIncrease={fakeIncrease} fakeDecrease={fakeDecrease} fakeHandleChange={fakeHandleChange} update={addFakeQuantityToRealQuantity}/>} />
-                    <Route path={"/cart"} element={<Cart cartShown={cartShown} setCartShown={ () => { setCartShown(false)} } shoppingItems={shoppingItems} increase={increase} decrease={decrease} handleChange={handleChange} price={price}/> }/>
+                    {/* <Route path={"/cart"} element={<Cart cartShown={cartShown} setCartShown={ () => { setCartShown(false)} } shoppingItems={shoppingItems} increase={increase} decrease={decrease} handleChange={handleChange} price={price}/> }/> */}
                 </Routes>
                 
             </BrowserRouter>
