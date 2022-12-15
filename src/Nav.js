@@ -34,9 +34,9 @@ const Nav  = (props) => {
         <div className="navigation"> 
             <div className="bannerpromo">GET AN EXTRA 10% OFF USING CODE <b onClick={ (e) => { navigator.clipboard.writeText(e.target.textContent)}}><u>YUGIOH22</u></b> AT CHECKOUT</div>
             <div className="navbar">
-                <Link to={"/"}><div className="navbarleft title"> Yu-Gi-Oh Card Market </div></Link>
+                <Link to={"//shopping-cart"}><div className="navbarleft title"> Yu-Gi-Oh Card Market </div></Link>
                 <div className="navbarright">
-                    <Link to={"/"}><div className="homebutton"> Home </div></Link>
+                    <Link to={"/shopping-cart"}><div className="homebutton"> Home </div></Link>
                     <Link to={"/store"}><div className="storebutton"> Store </div></Link>
                     <div className="cartbutton">
                         {/* <img className="cartsym cart" src={CartIcon} alt="cart icon"/> for cart icon */}
