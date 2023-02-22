@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.d73b60ae.css",
-    "main.js": "/shopping-cart/static/js/main.b90b83cc.js",
-    "static/media/yu-gi-oh homepage V3 bot.png": "/shopping-cart/static/media/yu-gi-oh homepage V3 bot.d3103a0ad21e9d8e765a.png",
-    "static/media/yu-gi-oh homepage V3 top.png": "/shopping-cart/static/media/yu-gi-oh homepage V3 top.724c35f67b0600b71583.png",
+    "main.css": "/shopping-cart/static/css/main.bde5ba13.css",
+    "main.js": "/shopping-cart/static/js/main.780914cb.js",
+    "static/media/yugioh-banner-bot.png": "/shopping-cart/static/media/yugioh-banner-bot.d3103a0ad21e9d8e765a.png",
+    "static/media/yugioh-banner-top.png": "/shopping-cart/static/media/yugioh-banner-top.724c35f67b0600b71583.png",
     "static/media/yu-gi-oh banner v1.png": "/shopping-cart/static/media/yu-gi-oh banner v1.0b50bf5d41627e7f569d.png",
     "static/media/infiniteimpermanencecrop.jpg": "/shopping-cart/static/media/infiniteimpermanencecrop.cad290c8c676891e2ce3.jpg",
     "static/media/slifercrop.jpg": "/shopping-cart/static/media/slifercrop.395c69baba3d702a0fc3.jpg",
@@ -92,11 +92,11 @@
     "static/media/mirrorforce.jpg": "/shopping-cart/static/media/mirrorforce.b415faebe138824de772.jpg",
     "static/media/swordscrop.jpg": "/shopping-cart/static/media/swordscrop.160239760677daecd5c7.jpg",
     "index.html": "/shopping-cart/index.html",
-    "main.d73b60ae.css.map": "/shopping-cart/static/css/main.d73b60ae.css.map",
-    "main.b90b83cc.js.map": "/shopping-cart/static/js/main.b90b83cc.js.map"
+    "main.bde5ba13.css.map": "/shopping-cart/static/css/main.bde5ba13.css.map",
+    "main.780914cb.js.map": "/shopping-cart/static/js/main.780914cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73b60ae.css",
-    "static/js/main.b90b83cc.js"
+    "static/css/main.bde5ba13.css",
+    "static/js/main.780914cb.js"
   ]
 }
